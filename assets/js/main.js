@@ -18,11 +18,16 @@ renderer.setPixelRatio( window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight)
 
 // create the plane
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100); // define geometry
-const material = new THREE.MeshBasicMaterial({ color: 0x80E9FC, wireframe: true }); // define material
+const geometry = new THREE.TorusGeometry(10, 3, 100, 100); // define geometry
+const material = new THREE.MeshStandardMaterial({color: 0x80E9FC}); // define material
 const torus = new THREE.Mesh(geometry, material); // define the mesh
+scene.add(torus); // add torus to scene
 
-scene.add(torus); // add torus to canvas
+// lights
+const pointLight = new THREE.PointLight(0xffffff); // define pointLight
+pointLight.position.set(15, 15, 15);
+const ambientLight = new THREE.AmbientLight(0xffffff);
+scene.add(pointLight, ambientLight); // add pointLight to scene
 
 // make canvas responsive
 window.addEventListener('resize', () => {
