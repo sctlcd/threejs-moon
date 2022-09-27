@@ -33,3 +33,16 @@ window.addEventListener('resize', () => {
 
 renderer.render(scene, camera);
 
+// rendering the scene
+function rendering() {
+  // rerender every time the page refreshes (pause when on another tab)
+  requestAnimationFrame(rendering);
+
+  torus.rotation.x += 0.01;
+  torus.rotation.y += 0.005;
+  torus.rotation.z += 0.01;
+
+  renderer.render(scene, camera);
+}
+
+rendering();
