@@ -106,7 +106,7 @@ Back to [top](#tableOfContents)
 
 ### Media <a name="media"></a>
 
-- []() - []() | copyright []()
+- [favicon.ico](https://www.flaticon.com/free-icon/planet_3336074?term=planet&related_id=3336074) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.freepik.com)
 
 
 Back to [top](#tableOfContents)
