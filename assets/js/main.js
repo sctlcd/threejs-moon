@@ -88,8 +88,12 @@ const normalTexture = new THREE.TextureLoader().load('assets/images/172_norm-min
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(12, 32, 32),
-  new THREE.MeshStandardMaterial({ 
+  new THREE.MeshStandardMaterial({
+    // the color map
     map: moonTexture,
+    // the texture to create a normal map. The RGB values affect the surface normal for each pixel 
+    // fragment and change the way the color is lit. Normal maps do not change the actual shape of 
+    // the surface, only the lighting
     normalMap: normalTexture,
   })
   );
