@@ -8,7 +8,7 @@ const scene = new THREE.Scene(); // define scene
 
 // camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); // define camera
-camera.position.setZ(54); // set camera position
+camera.position.setZ(80); // set camera position
 
 // renderer
 const renderer = new THREE.WebGLRenderer({
@@ -18,8 +18,8 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio( window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight)
 
-// Torus
-const torusGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-lucas-pezeta-3772378.jpg');
+// torus
+const torusGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-lucas-pezeta-3772378-min.jpg');
 const torusGeometry = new THREE.TorusGeometry(16, 2, 100, 100); // define geometry
 const torusMaterial = new THREE.MeshStandardMaterial({ map: torusGeometryTexture}); // define material
 const torus = new THREE.Mesh(torusGeometry, torusMaterial); // define the mesh
@@ -32,55 +32,69 @@ const ambientLight = new THREE.AmbientLight(0xffffff); // define ambientLight
 scene.add(pointLight, ambientLight); // add pointLight and ambientLight to scene
 
 // helpers
-const lightHelper = new THREE.PointLightHelper(pointLight); // define pointLight
-const gridHelper = new THREE.GridHelper(200, 50); // define gridHelper
-scene.add(lightHelper, gridHelper); // add pointLight and gridHelper to scene
+// const lightHelper = new THREE.PointLightHelper(pointLight); // define pointLight
+// const gridHelper = new THREE.GridHelper(200, 50); // define gridHelper
+// scene.add(lightHelper, gridHelper); // add pointLight and gridHelper to scene
 
 // orbit controls
 const controls = new OrbitControls(camera, renderer.domElement); // define orbitControls
 
-// texture
-const spaceTexture = new THREE.TextureLoader().load('assets/images/pexels-nicole-avagliano-2312040.jpg');
-scene.background = spaceTexture;
+// scene background
+const spaceTexture = new THREE.TextureLoader().load('assets/images/pexels-nicole-avagliano-2312040-min.jpg'); // define texture
+scene.background = spaceTexture; // define scene background
 
 // dodecahedron
-const dodecahedronGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-bella-chew-1368317.jpg');
+const dodecahedronGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-bella-chew-1368317-min.jpg'); // define texture
 
 const dodecahedron = new THREE.Mesh(
-  new THREE.DodecahedronGeometry(10, 0),
-  new THREE.MeshBasicMaterial({ map: dodecahedronGeometryTexture })
-  )
-scene.add(dodecahedron);
+  new THREE.DodecahedronGeometry(12, 0), // define geometry
+  new THREE.MeshBasicMaterial({ map: dodecahedronGeometryTexture }) // define material
+  ); // define mesh
+scene.add(dodecahedron); // add dodecahedron to scene
 
 // capsule
-const capsuleGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-karolina-grabowska-4040567.jpg');
+const capsuleGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-karolina-grabowska-4040567-min.jpg'); // define texture
 
 const capsule = new THREE.Mesh(
-  new THREE.CapsuleGeometry(4, 1, 4, 10),
-  new THREE.MeshBasicMaterial({ map: capsuleGeometryTexture })
-  )
-  capsule.position.set(40, 35, -5);
-scene.add(capsule);
+  new THREE.CapsuleGeometry(4, 1, 4, 10), // define geometry
+  new THREE.MeshBasicMaterial({ map: capsuleGeometryTexture }) // define material
+  ); // define mesh
+  capsule.position.set(40, 35, -5); // set position
+scene.add(capsule); // add capsule to scene
 
 // icosahedron
-const icosahedronTexture = new THREE.TextureLoader().load('assets/images/pexels-maksim-romashkin-7108217.jpg');
+const icosahedronTexture = new THREE.TextureLoader().load('assets/images/pexels-maksim-romashkin-7108217-min.jpg');
 
 const icosahedron = new THREE.Mesh(
   new THREE.IcosahedronGeometry(8, 0),
   new THREE.MeshBasicMaterial({ map: icosahedronTexture })
-  )
+  );
   icosahedron.position.set(25, -15, 20);
 scene.add(icosahedron);
 
 // octahedron
-const octahedronTexture = new THREE.TextureLoader().load('assets/images/pexels-karolina-grabowska-4046684.jpg');
+const octahedronTexture = new THREE.TextureLoader().load('assets/images/pexels-pixabay-158729-min.jpg');
 
 const octahedron = new THREE.Mesh(
   new THREE.OctahedronGeometry(6, 0),
   new THREE.MeshBasicMaterial({ map: octahedronTexture })
-  )
+  );
   octahedron.position.set(-80, 40, -40);
 scene.add(octahedron);
+
+// moon
+const moonTexture = new THREE.TextureLoader().load('assets/images/7XyId7s-min.jpeg');
+const normalTexture = new THREE.TextureLoader().load('assets/images/172_norm-min.JPG');
+
+const moon = new THREE.Mesh(
+  new THREE.SphereGeometry(12, 32, 32),
+  new THREE.MeshStandardMaterial({ 
+    map: moonTexture,
+    normalMap: normalTexture,
+  })
+  );
+  moon.position.set(-30, -20, 40);
+scene.add(moon);
 
 // make canvas responsive
 window.addEventListener('resize', () => {
@@ -128,6 +142,10 @@ function rendering() {
   octahedron.rotation.x += 0.001;
   octahedron.rotation.y += 0.01;
   octahedron.rotation.z += 0.02;
+
+  moon.rotation.x += 0.005;
+  moon.rotation.y += 0.005;
+  moon.rotation.z += 0.005;
 
   // update OrbitControls controls 
   controls.update();

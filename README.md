@@ -110,9 +110,19 @@ Back to [top](#tableOfContents)
 
 - [pexels-nicole-avagliano-2312040-min.jpg](https://www.pexels.com/photo/milky-way-photography-2312040/) - [Pexels](https://www.pexels.com) | copyright [Nicole Avagliano](https://www.pexels.com/@nicole-avagliano-1132392/)
 
-- [](https://imgur.com/gallery/7XyId7s) - [Imgur](https://i.imgur.com/7XyId7s.jpeg) | copyright [rudneicunha](https://imgur.com/user/rudneicunha)
+- [7XyId7s-min.jpeg](https://imgur.com/gallery/7XyId7s) - [Imgur](https://i.imgur.com/7XyId7s.jpeg) | copyright [rudneicunha](https://imgur.com/user/rudneicunha)
 
-- [](https://www.pexels.com/photo/rock-formation-1368317/) - [Pexels](https://www.pexels.com) | copyright [Bella Chew](https://www.pexels.com/@bella-chew-590708/)
+- [172_norm-min.JPG](https://opengameart.org/content/50-free-textures-4-normalmaps) - [Open Game Art](https://opengameart.org/) | copyright [rubberduck](https://opengameart.org/users/rubberduck)
+
+- [pexels-bella-chew-1368317-min.jpg](https://www.pexels.com/photo/rock-formation-1368317/) - [Pexels](https://www.pexels.com) | copyright [Bella Chew](https://www.pexels.com/@bella-chew-590708/)
+
+- [pexels-karolina-grabowska-4040567-min.jpg](https://www.pexels.com/photo/set-of-shiny-transparent-amethysts-grown-together-4040567/) - [Pexels](https://www.pexels.com) | copyright [Karolina Grabowska](https://www.pexels.com/@karolina-grabowska/)
+
+- [pexels-lucas-pezeta-3772378-min.jpg](https://www.pexels.com/photo/photo-of-stars-and-galaxy-3772378/) - [Pexels](https://www.pexels.com) | copyright [Lucas Pezeta](https://www.pexels.com/@lucaspezeta/)
+
+- [pexels-maksim-romashkin-7108217-min.jpg](https://www.pexels.com/photo/abstract-background-of-frozen-river-with-rough-surface-7108217/) - [Pexels](https://www.pexels.com) | copyright [Maksim Romashkin](https://www.pexels.com/@maksim-romashkin/)
+
+- [pexels-pixabay-158729-min.jpg](https://www.pexels.com/es-es/foto/forma-de-tierra-gris-y-azul-158729/) -[Pexels](https://www.pexels.com) | copyright [Pixabay](https://www.pexels.com/es-es/@pixabay/)
 
 Back to [top](#tableOfContents)
 
