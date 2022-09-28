@@ -108,6 +108,9 @@ Back to [top](#tableOfContents)
 
 - [favicon.ico](https://www.flaticon.com/free-icon/planet_3336074?term=planet&related_id=3336074) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.freepik.com)
 
+- [pexels-nicole-avagliano-2312040-min.jpg](https://www.pexels.com/photo/milky-way-photography-2312040/) - [Pexels](https://www.pexels.com) | copyright [Nicole Avagliano](https://www.pexels.com/@nicole-avagliano-1132392/)
+
+- [](https://imgur.com/gallery/7XyId7s) - [Imgur](https://i.imgur.com/7XyId7s.jpeg) | copyright [rudneicunha](https://imgur.com/user/rudneicunha)
 
 Back to [top](#tableOfContents)
 

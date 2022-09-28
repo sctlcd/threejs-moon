@@ -38,6 +38,10 @@ scene.add(lightHelper, gridHelper); // add pointLight and gridHelper to scene
 // OrbitControls
 const controls = new OrbitControls(camera, renderer.domElement); // define orbitControls
 
+// texture
+const spaceTexture = new THREE.TextureLoader().load('assets/images/pexels-nicole-avagliano-2312040.jpg');
+scene.background = spaceTexture;
+
 // make canvas responsive
 window.addEventListener('resize', () => {
   renderer.setSize(window.innerWidth, window.innerHeight); // update size
