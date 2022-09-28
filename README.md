@@ -112,6 +112,8 @@ Back to [top](#tableOfContents)
 
 - [](https://imgur.com/gallery/7XyId7s) - [Imgur](https://i.imgur.com/7XyId7s.jpeg) | copyright [rudneicunha](https://imgur.com/user/rudneicunha)
 
+- [](https://www.pexels.com/photo/rock-formation-1368317/) - [Pexels](https://www.pexels.com) | copyright [Bella Chew](https://www.pexels.com/@bella-chew-590708/)
+
 Back to [top](#tableOfContents)
 
 ---
