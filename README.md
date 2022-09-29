@@ -122,7 +122,7 @@ Back to [top](#tableOfContents)
 
 - [pexels-maksim-romashkin-7108217-min.jpg](https://www.pexels.com/photo/abstract-background-of-frozen-river-with-rough-surface-7108217/) - [Pexels](https://www.pexels.com) | copyright [Maksim Romashkin](https://www.pexels.com/@maksim-romashkin/)
 
-- [pexels-pixabay-158729-min.jpg](https://www.pexels.com/es-es/foto/forma-de-tierra-gris-y-azul-158729/) -[Pexels](https://www.pexels.com) | copyright [Pixabay](https://www.pexels.com/es-es/@pixabay/)
+- [seamless-g8ce10d423_1920-min.jpg](https://pixabay.com/illustrations/seamless-repeat-repetitive-2033682/) -[Pixabay](https://pixabay.com/) | copyright [Prawny](https://pixabay.com/users/prawny-162579/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2033682)
 
 Back to [top](#tableOfContents)
 
