@@ -1,5 +1,6 @@
 import '../style/style.css';
 
+// import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.144.0/three.module.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -19,8 +20,8 @@ renderer.setPixelRatio( window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight)
 
 // torus
-const torusGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-cottonbro-9665188-min.jpg'); // define texture
-const torusGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/pexels-cottonbro-9665188-min.jpg');
+const torusGeometryTexture = new THREE.TextureLoader().load('images/pexels-cottonbro-9665188-min.jpg'); // define texture
+const torusGeometryNormalTexture = new THREE.TextureLoader().load('images/pexels-cottonbro-9665188-min.jpg');
 
 const torusGeometry = new THREE.TorusGeometry(16, 2, 100, 100); // define geometry
 const torusMaterial = new THREE.MeshStandardMaterial({
@@ -49,12 +50,12 @@ scene.add(pointLight, ambientLight); // add pointLight and ambientLight to scene
 const controls = new OrbitControls(camera, renderer.domElement); // define orbitControls
 
 // scene background
-const spaceTexture = new THREE.TextureLoader().load('assets/images/pexels-nicole-avagliano-2312040-min.jpg'); // define texture
+const spaceTexture = new THREE.TextureLoader().load('images/pexels-nicole-avagliano-2312040-min.jpg'); // define texture
 scene.background = spaceTexture; // define scene background
 
 // dodecahedron
-const dodecahedronGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-bella-chew-1368317-min.jpg'); // define texture
-const dodecahedronGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/197_norm-min.jpg'); // define normal texture
+const dodecahedronGeometryTexture = new THREE.TextureLoader().load('images/pexels-bella-chew-1368317-min.jpg'); // define texture
+const dodecahedronGeometryNormalTexture = new THREE.TextureLoader().load('images/197_norm-min.jpg'); // define normal texture
 
 const dodecahedron = new THREE.Mesh(
   new THREE.DodecahedronGeometry(12, 0), // define geometry
@@ -70,8 +71,8 @@ const dodecahedron = new THREE.Mesh(
 scene.add(dodecahedron); // add dodecahedron to scene
 
 // capsule
-const capsuleGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-karolina-grabowska-4040567-min.jpg'); // define texture
-const capsuleGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/151_norm-min.jpg'); // define normal texture
+const capsuleGeometryTexture = new THREE.TextureLoader().load('images/pexels-karolina-grabowska-4040567-min.jpg'); // define texture
+const capsuleGeometryNormalTexture = new THREE.TextureLoader().load('images/151_norm-min.jpg'); // define normal texture
 
 const capsule = new THREE.Mesh(
   new THREE.CapsuleGeometry(6, 1, 4, 10), // define geometry
@@ -84,8 +85,8 @@ capsule.position.set(-40, 50, -5); // set position
 scene.add(capsule); // add capsule to scene
 
 // icosahedron
-const icosahedronTexture = new THREE.TextureLoader().load('assets/images/pexels-maksim-romashkin-7108217-min.jpg');
-const icosahedronNormalTexture = new THREE.TextureLoader().load('assets/images/161_norm-min.jpg');
+const icosahedronTexture = new THREE.TextureLoader().load('images/pexels-maksim-romashkin-7108217-min.jpg');
+const icosahedronNormalTexture = new THREE.TextureLoader().load('images/161_norm-min.jpg');
 
 const icosahedron = new THREE.Mesh(
   new THREE.IcosahedronGeometry(8, 0),
@@ -98,8 +99,8 @@ icosahedron.position.set(-60, 20, 30);
 scene.add(icosahedron);
 
 // octahedron
-const octahedronTexture = new THREE.TextureLoader().load('assets/images/seamless-g8ce10d423_1920-min.jpg');
-const octahedronNormalTexture =  new THREE.TextureLoader().load('assets/images/165_norm-min.jpg');
+const octahedronTexture = new THREE.TextureLoader().load('images/seamless-g8ce10d423_1920-min.jpg');
+const octahedronNormalTexture =  new THREE.TextureLoader().load('images/165_norm-min.jpg');
 
 const octahedron = new THREE.Mesh(
   new THREE.OctahedronGeometry(6, 0),
@@ -112,8 +113,8 @@ octahedron.position.set(50, -40, -20);
 scene.add(octahedron);
 
 // moon
-const moonTexture = new THREE.TextureLoader().load('assets/images/7XyId7s-min.jpeg');
-const moonNormalTexture = new THREE.TextureLoader().load('assets/images/172_norm-min.jpg');
+const moonTexture = new THREE.TextureLoader().load('images/7XyId7s-min.jpeg');
+const moonNormalTexture = new THREE.TextureLoader().load('images/172_norm-min.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(12, 32, 32),
@@ -122,7 +123,7 @@ const moon = new THREE.Mesh(
     normalMap: moonNormalTexture,
   })
 );
-moon.position.set(-30, -20, 60);
+moon.position.set(-30, -20, 35);
 scene.add(moon);
 
 // animation on scroll
