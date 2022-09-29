@@ -114,6 +114,14 @@ Back to [top](#tableOfContents)
 
 - [172_norm-min.JPG](https://opengameart.org/content/50-free-textures-4-normalmaps) - [Open Game Art](https://opengameart.org/) | copyright [rubberduck](https://opengameart.org/users/rubberduck)
 
+- [151_norm-min.JPG](https://opengameart.org/content/50-free-textures-4-normalmaps) - [Open Game Art](https://opengameart.org/) | copyright [rubberduck](https://opengameart.org/users/rubberduck)
+
+- [161_norm-min.JPG](https://opengameart.org/content/50-free-textures-4-normalmaps) - [Open Game Art](https://opengameart.org/) | copyright [rubberduck](https://opengameart.org/users/rubberduck)
+
+- [197_norm-min.JPG](https://opengameart.org/content/50-free-textures-4-normalmaps) - [Open Game Art](https://opengameart.org/) | copyright [rubberduck](https://opengameart.org/users/rubberduck)
+
+- [172_norm-min.JPG](https://opengameart.org/content/50-free-textures-4-normalmaps) - [Open Game Art](https://opengameart.org/) | copyright [rubberduck](https://opengameart.org/users/rubberduck)
+
 - [pexels-bella-chew-1368317-min.jpg](https://www.pexels.com/photo/rock-formation-1368317/) - [Pexels](https://www.pexels.com) | copyright [Bella Chew](https://www.pexels.com/@bella-chew-590708/)
 
 - [pexels-karolina-grabowska-4040567-min.jpg](https://www.pexels.com/photo/set-of-shiny-transparent-amethysts-grown-together-4040567/) - [Pexels](https://www.pexels.com) | copyright [Karolina Grabowska](https://www.pexels.com/@karolina-grabowska/)
@@ -122,7 +130,9 @@ Back to [top](#tableOfContents)
 
 - [pexels-maksim-romashkin-7108217-min.jpg](https://www.pexels.com/photo/abstract-background-of-frozen-river-with-rough-surface-7108217/) - [Pexels](https://www.pexels.com) | copyright [Maksim Romashkin](https://www.pexels.com/@maksim-romashkin/)
 
-- [seamless-g8ce10d423_1920-min.jpg](https://pixabay.com/illustrations/seamless-repeat-repetitive-2033682/) -[Pixabay](https://pixabay.com/) | copyright [Prawny](https://pixabay.com/users/prawny-162579/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2033682)
+- [seamless-g8ce10d423_1920-min.jpg](https://pixabay.com/illustrations/seamless-repeat-repetitive-2033682/) - [Pixabay](https://pixabay.com/) | copyright [Prawny](https://pixabay.com/users/prawny-162579/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2033682)
+
+- [pexels-cottonbro-9665188-min.jpg](https://www.pexels.com/photo/white-dust-particles-on-black-background-9665188/) - [Pixabay](https://pixabay.com/) | copyright [cottonbro](https://www.pexels.com/@cottonbro/)
 
 Back to [top](#tableOfContents)
 
