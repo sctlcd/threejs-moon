@@ -1,9 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
 canvas {
   position: fixed;
   top: 0;
   left: 0;
 }
 
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+  --spacing: 18rem;
+  --orbitron: 'Orbitron', sans-serif;
+  --spaceMono: 'Space Mono', monospace;
+
+  font-weight: 400;
+  font-style: normal;
+}
+
 main {
+  width: 100vw;
+  color: var(--white);
+  z-index: 99;
   position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7rem 0;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: var(--orbitron);
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 7 / 12;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+section {
+  color: var(--white);
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 3 / span 8;
+  margin-bottom: var(--spacing);
+  text-align: center;
+}
+
+blockquote p {
+  color: var(--black);
+  background-color: var(--white);
+  font-size: 2rem;
+  display: inline;
+  line-height: 1.5;
+  font-family: var(--spaceMono);
+}
+
+p {
+  font-size: 1rem;
+  display: inline;
+  line-height: 1;
+  font-family: var(--spaceMono);
+}
+
+.left {
+  grid-column: 6 / 12;
 }
