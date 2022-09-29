@@ -8,7 +8,7 @@ const scene = new THREE.Scene(); // define scene
 
 // camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); // define camera
-camera.position.setZ(80); // set camera position
+// camera.position.setZ(80); // set camera position
 
 // renderer
 const renderer = new THREE.WebGLRenderer({
@@ -19,9 +19,18 @@ renderer.setPixelRatio( window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight)
 
 // torus
-const torusGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-cottonbro-9665188.jpg');
+const torusGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-cottonbro-9665188-min.jpg'); // define texture
+const torusGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/pexels-cottonbro-9665188-min.jpg');
+
 const torusGeometry = new THREE.TorusGeometry(16, 2, 100, 100); // define geometry
-const torusMaterial = new THREE.MeshStandardMaterial({ map: torusGeometryTexture}); // define material
+const torusMaterial = new THREE.MeshStandardMaterial({
+  // the color map
+  map: torusGeometryTexture,
+  // the texture to create a normal map. The RGB values affect the surface normal for each pixel 
+  // fragment and change the way the color is lit. Normal maps do not change the actual shape of 
+  // the surface, only the lighting
+  normalMap: torusGeometryNormalTexture,
+}); // define material
 const torus = new THREE.Mesh(torusGeometry, torusMaterial); // define the mesh
 scene.add(torus); // add torus to scene
 
@@ -45,29 +54,33 @@ scene.background = spaceTexture; // define scene background
 
 // dodecahedron
 const dodecahedronGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-bella-chew-1368317-min.jpg'); // define texture
-const dodecahedronGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/197_norm-min.jpg');
+const dodecahedronGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/197_norm-min.jpg'); // define normal texture
 
 const dodecahedron = new THREE.Mesh(
   new THREE.DodecahedronGeometry(12, 0), // define geometry
   new THREE.MeshBasicMaterial({
+    // the color map
     map: dodecahedronGeometryTexture,
+    // the texture to create a normal map. The RGB values affect the surface normal for each pixel 
+    // fragment and change the way the color is lit. Normal maps do not change the actual shape of 
+    // the surface, only the lighting
     normalMap: dodecahedronGeometryNormalTexture,
   }) // define material
-  ); // define mesh
+); // define mesh
 scene.add(dodecahedron); // add dodecahedron to scene
 
 // capsule
 const capsuleGeometryTexture = new THREE.TextureLoader().load('assets/images/pexels-karolina-grabowska-4040567-min.jpg'); // define texture
-const capsuleGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/151_norm-min.jpg');
+const capsuleGeometryNormalTexture = new THREE.TextureLoader().load('assets/images/151_norm-min.jpg'); // define normal texture
 
 const capsule = new THREE.Mesh(
-  new THREE.CapsuleGeometry(4, 1, 4, 10), // define geometry
+  new THREE.CapsuleGeometry(6, 1, 4, 10), // define geometry
   new THREE.MeshBasicMaterial({
     map: capsuleGeometryTexture,
     normalMap: capsuleGeometryNormalTexture,
   }) // define material
-  ); // define mesh
-  capsule.position.set(40, 35, -5); // set position
+); // define mesh
+capsule.position.set(-40, 50, -5); // set position
 scene.add(capsule); // add capsule to scene
 
 // icosahedron
@@ -80,8 +93,8 @@ const icosahedron = new THREE.Mesh(
     map: icosahedronTexture,
     normalMap:icosahedronNormalTexture,
   })
-  );
-  icosahedron.position.set(25, -15, 20);
+);
+icosahedron.position.set(-60, 20, 30);
 scene.add(icosahedron);
 
 // octahedron
@@ -92,14 +105,10 @@ const octahedron = new THREE.Mesh(
   new THREE.OctahedronGeometry(6, 0),
   new THREE.MeshBasicMaterial({
     map: octahedronTexture,
-    // the texture to create a normal map. The RGB values affect the surface normal for each pixel 
-    // fragment and change the way the color is lit. Normal maps do not change the actual shape of 
-    // the surface, only the lighting
     normalMap: octahedronNormalTexture,
-
   })
-  );
-  octahedron.position.set(-80, 40, -40);
+);
+octahedron.position.set(50, -40, -20);
 scene.add(octahedron);
 
 // moon
@@ -109,39 +118,44 @@ const moonNormalTexture = new THREE.TextureLoader().load('assets/images/172_norm
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(12, 32, 32),
   new THREE.MeshStandardMaterial({
-    // the color map
     map: moonTexture,
-    // the texture to create a normal map. The RGB values affect the surface normal for each pixel 
-    // fragment and change the way the color is lit. Normal maps do not change the actual shape of 
-    // the surface, only the lighting
     normalMap: moonNormalTexture,
   })
-  );
-  moon.position.set(-30, -20, 40);
+);
+moon.position.set(-30, -20, 60);
 scene.add(moon);
 
-// moon.position.z = 50;
-// moon.position.setX(-10);
+// animation on scroll
+function moveCamera() {
+  const t = document.body.getBoundingClientRect().top;
+  
+  moon.rotation.x += 0.05;
+  moon.rotation.y += 0.075;
+  moon.rotation.z += 0.05;
 
-dodecahedron.position.z = -5;
-dodecahedron.position.x = 2;
+  dodecahedron.rotation.y += 0.08;
+  dodecahedron.rotation.z += 0.04;
+  dodecahedron.rotation.z += 0.02;
 
-// function moveCamera() {
-//   const t = document.body.getBoundingClientRect().top;
-//   moon.rotation.x += 0.05;
-//   moon.rotation.y += 0.075;
-//   moon.rotation.z += 0.05;
+  capsule.rotation.y += 0.03;
+  capsule.rotation.z += 0.05;
+  capsule.rotation.z += 0.01;
 
-//   dodecahedron.rotation.y += 0.01;
-//   dodecahedron.rotation.z += 0.01;
+  icosahedron.rotation.y += 0.07;
+  icosahedron.rotation.z += 0.09;
+  icosahedron.rotation.z += 0.06;
 
-//   camera.position.z = t * -0.01;
-//   camera.position.x = t * -0.0002;
-//   camera.rotation.y = t * -0.0002;
-// }
+  octahedron.rotation.y += 0.06;
+  octahedron.rotation.z += 0.03;
+  octahedron.rotation.z += 0.01;
 
-// document.body.onscroll = moveCamera;
-// moveCamera();
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.rotation.y = t * -0.0002;
+}
+
+document.body.onscroll = moveCamera;
+moveCamera();
 
 // make canvas responsive
 window.addEventListener('resize', () => {
@@ -174,25 +188,26 @@ function rendering() {
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.001;
 
-  // dodecahedron.rotation.x += 0.01;
-  // dodecahedron.rotation.y += 0.02;
-  // dodecahedron.rotation.z += 0.003;
+  dodecahedron.rotation.x += 0.01;
+  dodecahedron.rotation.y += 0.02;
+  dodecahedron.rotation.z += 0.003;
 
-  // capsule.rotation.x += 0.003;
-  // capsule.rotation.y += 0.02;
-  // capsule.rotation.z += 0.01;
+  capsule.rotation.x += 0.003;
+  capsule.rotation.y += 0.02;
+  capsule.rotation.z += 0.01;
 
-  // icosahedron.rotation.x += 0.01;
-  // icosahedron.rotation.y += 0.002;
-  // icosahedron.rotation.z += 0.01;
+  icosahedron.rotation.x += 0.01;
+  icosahedron.rotation.y += 0.002;
+  icosahedron.rotation.z += 0.01;
 
-  // octahedron.rotation.x += 0.001;
-  // octahedron.rotation.y += 0.01;
-  // octahedron.rotation.z += 0.02;
+  octahedron.rotation.x += 0.001;
+  octahedron.rotation.y += 0.01;
+  octahedron.rotation.z += 0.02;
 
+  // moon.position.set(-30, -20, 50);
   moon.rotation.x += 0.005;
-  // moon.rotation.y += 0.005;
-  // moon.rotation.z += 0.005;
+  moon.rotation.y += 0.005;
+  moon.rotation.z += 0.005;
 
   // update OrbitControls controls 
   controls.update();
