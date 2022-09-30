@@ -4,9 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "// dev": "start dev server",
     "dev": "vite",
+    "// build": "build for production",
     "build": "vite build",
-    "preview": "vite preview",
+    "// preview":"locally preview production build",
+    "preview": "vite preview --port 8080", 
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
