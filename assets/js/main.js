@@ -1,18 +1,12 @@
 import '../style/style.css';
-
-// import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.144.0/three.module.js';
-// import * as THREE from 'https://unpkg.com/three@0.144.0/build/three.module.js';
 import * as THREE from '/node_modules/three/build/three.module.js';
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls';
-// import { OrbitControls } from 'https://unpkg.com/three@0.144.0/examples/jsm/controls/OrbitControls.js';
 
 // create scene
 const scene = new THREE.Scene(); // define scene
 
 // camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); // define camera
-// camera.position.setZ(80); // set camera position
 
 // renderer
 const renderer = new THREE.WebGLRenderer({
@@ -62,7 +56,7 @@ const dodecahedronGeometryNormalTexture = new THREE.TextureLoader().load('images
 
 const dodecahedron = new THREE.Mesh(
   new THREE.DodecahedronGeometry(12, 0), // define geometry
-  new THREE.MeshBasicMaterial({
+  new THREE.MeshStandardMaterial({
     // the color map
     map: dodecahedronGeometryTexture,
     // the texture to create a normal map. The RGB values affect the surface normal for each pixel 
@@ -79,7 +73,7 @@ const capsuleGeometryNormalTexture = new THREE.TextureLoader().load('images/151_
 
 const capsule = new THREE.Mesh(
   new THREE.CapsuleGeometry(6, 1, 4, 10), // define geometry
-  new THREE.MeshBasicMaterial({
+  new THREE.MeshStandardMaterial({
     map: capsuleGeometryTexture,
     normalMap: capsuleGeometryNormalTexture,
   }) // define material
@@ -93,7 +87,7 @@ const icosahedronNormalTexture = new THREE.TextureLoader().load('images/161_norm
 
 const icosahedron = new THREE.Mesh(
   new THREE.IcosahedronGeometry(8, 0),
-  new THREE.MeshBasicMaterial({
+  new THREE.MeshStandardMaterial({
     map: icosahedronTexture,
     normalMap:icosahedronNormalTexture,
   })
@@ -107,7 +101,7 @@ const octahedronNormalTexture =  new THREE.TextureLoader().load('images/165_norm
 
 const octahedron = new THREE.Mesh(
   new THREE.OctahedronGeometry(6, 0),
-  new THREE.MeshBasicMaterial({
+  new THREE.MeshStandardMaterial({
     map: octahedronTexture,
     normalMap: octahedronNormalTexture,
   })

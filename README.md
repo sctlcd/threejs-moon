@@ -1,4 +1,4 @@
-# [three-js-moon]()
+# [three-js-moon](https://three-js-moon.web.app/)
 
 <br />
 <img src="" alt="three-js-moon" width="800">
@@ -90,13 +90,45 @@ Back to [top](#tableOfContents)
 
 ### Deployment - Live Website <a name="#deploymentLiveWebsite"></a>
 
-[three-js-moon](https://github.com/sctlcd/three-js-moon) live website is currently deployed on [GitHub pages](https://pages.github.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
+[three-js-moon](https://github.com/sctlcd/three-js-moon) live website is currently deployed on [Firebase](https://firebase.google.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
 
-1.	In GitHub click on your repository to open it.
-2.	Find the 'settings' tab and click on it.
-3.	In the left menu select 'Pages'
-4.	In Build and deployment section, under 'Source' choose a branch `Deploy from a branch`, under Branch chose `main` and `/(root)` then press the Save button
-5.	Wait a couple of minutes and refresh the page then you will see a URL to your live site. In my case the URL is https://github.com/sctlcd/three-js-moon
+1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
+
+2. Create firebase.json and .firebaserc at the root of your project with the following content:
+
+    `firebase.json`:
+
+    ```
+    json
+    {
+      "hosting": {
+        "public": "dist",
+        "ignore": [],
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      }
+    }
+    ```
+
+    `.firebaserc`:
+
+    ```
+    js
+    {
+      "projects": {
+        "default": "<YOUR_FIREBASE_ID>"
+      }
+    }
+    ```
+
+3. After running `npm run build`, deploy using the command `firebase deploy`.
+
+
+=> live link: https://three-js-moon.web.app/
 
 Back to [top](#tableOfContents)
 
