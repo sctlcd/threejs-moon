@@ -4,8 +4,8 @@ import '../style/style.css';
 // import * as THREE from 'https://unpkg.com/three@0.144.0/build/three.module.js';
 import * as THREE from '/node_modules/three/build/three.module.js';
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-// import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls';
-import { OrbitControls } from 'https://unpkg.com/three@0.144.0/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls';
+// import { OrbitControls } from 'https://unpkg.com/three@0.144.0/examples/jsm/controls/OrbitControls.js';
 
 // create scene
 const scene = new THREE.Scene(); // define scene
