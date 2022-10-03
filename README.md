@@ -1,7 +1,7 @@
 # [three-js-moon](https://three-js-moon.web.app/)
 
 <br />
-<img src="" alt="three-js-moon" width="800">
+<img src="https://github.com/sctlcd/three-js-moon/blob/main/design/three-js-moon-mockup-presentation.png" alt="three-js-moon" width="800">
 <br />
 
 ---
