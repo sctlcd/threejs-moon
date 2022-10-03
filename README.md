@@ -22,6 +22,7 @@
 
 ## Introduction <a name="introduction"></a>
 
+Creating an animated 3D galaxy with Three.js
 
 ## Run the project locally <a name="#runLocally"></a>
 
