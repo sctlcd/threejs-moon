@@ -92,7 +92,7 @@ const icosahedron = new THREE.Mesh(
     normalMap:icosahedronNormalTexture,
   })
 );
-icosahedron.position.set(-60, 20, 30);
+icosahedron.position.set(-50, 20, 30);
 scene.add(icosahedron);
 
 // octahedron

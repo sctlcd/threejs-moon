@@ -27,7 +27,6 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 6rem 0;
-  
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -40,14 +39,7 @@ h1, h2, h3, blockquote {
 
 header {
   background: var(--dark-bg);
-  grid-column: 8 / 12;
-  font-size: 1.5rem;
-  padding: 1.5rem;
   margin-bottom: var(--spacing);
-}
-
-header p {
-  font-size: 1.5rem;
 }
 
 h1 {
@@ -56,7 +48,6 @@ h1 {
 
 section {
   color: var(--white);
-  grid-column: 2 / 8;
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
@@ -67,7 +58,6 @@ section {
 blockquote {
   margin: 0;
   padding: 0;
-  grid-column: 3 / span 8;
   margin-bottom: var(--spacing);
   text-align: center;
 }
@@ -75,19 +65,206 @@ blockquote {
 blockquote p {
   color: var(--black);
   background-color: var(--white);
-  font-size: 2rem;
   display: inline;
   line-height: 1.5;
   font-family: var(--spaceMono);
 }
 
 p {
-  font-size: 1rem;
   display: inline;
-  line-height: 1;
   font-family: var(--spaceMono);
 }
 
-.left {
-  grid-column: 6 / 12;
+/* ************************************************************ Media Queries *****/
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size:1.3rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  header {
+    padding:1rem;
+    grid-column: 3/11;
+  }
+
+  section,
+  blockquote,
+  .left {
+    grid-column: 2/12;
+  }
+
+  blockquote p {
+    font-size:0.9rem;
+  }
+
+  p {
+    font-size:0.6rem;
+  }
+
+  h2 {
+    font-size:1rem;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and up) */
+@media only screen and (min-width: 400px) {
+  h1 {
+    font-size:1.5rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  header {
+    padding:1rem;
+    grid-column: 4/10;
+  }
+
+  section,
+  blockquote,
+  .left {
+    grid-column: 2/12;
+  }
+
+  blockquote p {
+    font-size:1.1rem;
+  }
+
+  p {
+    font-size:0.6rem;
+  }
+
+  h2 {
+    font-size:1.3rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size:1.6rem;
+  }
+
+  header p {
+    font-size: 0.7rem;
+  }
+
+  header {
+    grid-column: 8 / 12;
+  }
+
+  section {
+    grid-column: 2 / 8;
+  }
+
+  blockquote {
+    grid-column: 3 / span 8;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+  blockquote p {
+    font-size:1.3rem;
+  }
+
+  p {
+    font-size:0.7rem;
+  }
+
+  h2 {
+    font-size:1.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size:1.9rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  blockquote p {
+    font-size:1.5rem;
+  }
+
+  p {
+    font-size:0.9rem;
+  }
+
+  h2 {
+    font-size:1.7rem;
+  }
+
+  header {
+    padding:1.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size:2.5rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  blockquote p {
+    font-size:1.7rem;
+  }
+
+  p {
+    font-size:0.9rem;
+  }
+
+  h2 {
+    font-size:1.9rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size:3rem;
+  }
+
+  header p {
+    font-size: 1.3rem;
+  }
+
+  blockquote p {
+    font-size:1.8rem;
+  }
+
+  p {
+    font-size:0.9rem;
+  }
+
+  h2 {
+    font-size:2rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  h1 {
+    font-size:3.5rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
 }
