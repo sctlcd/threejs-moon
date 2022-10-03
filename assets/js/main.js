@@ -18,7 +18,7 @@ renderer.setSize( window.innerWidth, window.innerHeight)
 
 // torus
 const torusGeometryTexture = new THREE.TextureLoader().load('images/pexels-cottonbro-9665188-min.jpg'); // define texture
-const torusGeometryNormalTexture = new THREE.TextureLoader().load('images/pexels-cottonbro-9665188-min.jpg');
+const torusGeometryNormalTexture = new THREE.TextureLoader().load('images/188_norm-min.jpg');
 
 const torusGeometry = new THREE.TorusGeometry(16, 2, 100, 100); // define geometry
 const torusMaterial = new THREE.MeshStandardMaterial({
