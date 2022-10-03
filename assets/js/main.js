@@ -202,7 +202,6 @@ function rendering() {
   octahedron.rotation.y += 0.01;
   octahedron.rotation.z += 0.02;
 
-  // moon.position.set(-30, -20, 50);
   moon.rotation.x += 0.005;
   moon.rotation.y += 0.005;
   moon.rotation.z += 0.005;
