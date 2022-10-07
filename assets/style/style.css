@@ -79,6 +79,11 @@ p {
   margin-bottom: 100vh;
 }
 
+.first {
+  margin-top: 100vh;
+}
+
+
 /* ************************************************************ Media Queries *****/
 
 /* Extra small devices (phones, 400px and down) */
