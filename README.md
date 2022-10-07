@@ -73,7 +73,7 @@ Back to [top](#tableOfContents)
     - [three](https://www.npmjs.com/package/three) - **a JavaScript 3D library**, 
     - [vite](https://vitejs.dev/) - **a built in development server**,
 
-5. Install Vite, a development server with live reload capability.
+5. Install [Vite](https://vitejs.dev/), a development server with live reload capability.
 
   - To install:
     
@@ -96,6 +96,10 @@ Back to [top](#tableOfContents)
 [three-js-moon](https://github.com/sctlcd/three-js-moon) live website is currently deployed on [Firebase](https://firebase.google.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
 
 1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
+
+    ```
+      npm install -g firebase-tools
+    ```
 
 2. Create firebase.json and .firebaserc at the root of your project with the following content:
 
