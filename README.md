@@ -1,7 +1,7 @@
-# [three-js-moon](https://three-js-moon.web.app/)
+# [threejs-moon](https://threejs-moon.web.app/)
 
 <br />
-<img src="https://github.com/sctlcd/three-js-moon/blob/main/design/three-js-moon-mockup-presentation.png" alt="three-js-moon" width="800">
+<img src="https://github.com/sctlcd/threejs-moon/blob/main/design/threejs-moon-mockup-presentation.png" alt="threejs-moon" width="800">
 <br />
 
 ---
@@ -35,7 +35,7 @@ Install [Vite](https://vitejs.dev/), a development server with live reload capab
   - To install:
     
     ```
-     npm create vite@latest
+      npm create vite@latest
     ```
 
   - To run (from your local directory):
@@ -53,19 +53,19 @@ Back to [top](#tableOfContents)
 
 1. Prerequisite:  
     - Make sure [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) are installed on your computer. You can download both at nodejs.org (NPM is included in your Node installation).
-    - Please see `.nvmrc` file at the root of `three-js-moon` repo.
+    - Please see `.nvmrc` file at the root of `threejs-moon` repo.
     - Using nvm, a Node Version Manager is recommended as it helps you manage and switch between different Node versions with ease. It provides a command-line interface where you can install different versions with a single command, set a default, switch between them, etc.
-2. In GitHub click on the repository nammed [three-js-moon](https://github.com/sctlcd/three-js-moon)
+2. In GitHub click on the repository nammed [threejs-moon](https://github.com/sctlcd/threejs-moon)
 3. Clone the repository locally. Run
 
     ````
-      git clone https://github.com/sctlcd/three-js-moon.git
+      git clone https://github.com/sctlcd/threejs-moon.git
     ````
 
 4. Install all modules listed as dependencies in package.json
 
     ```
-      cd three-js-moon
+      cd threejs-moon
       npm i 
     ```
 
@@ -78,7 +78,7 @@ Back to [top](#tableOfContents)
   - To install:
     
     ```
-     npm create vite@latest
+      npm create vite@latest
     ```
 
   - To run (from your local directory):
@@ -93,7 +93,7 @@ Back to [top](#tableOfContents)
 
 ### Deployment - Live Website <a name="#deploymentLiveWebsite"></a>
 
-[three-js-moon](https://github.com/sctlcd/three-js-moon) live website is currently deployed on [Firebase](https://firebase.google.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
+[threejs-moon](https://github.com/sctlcd/threejs-moon) live website is currently deployed on [Firebase](https://firebase.google.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
 
 1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
 
@@ -106,34 +106,34 @@ Back to [top](#tableOfContents)
     `firebase.json`:
 
     ```
-    {
-      "hosting": {
-        "public": "dist",
-        "ignore": [],
-        "rewrites": [
-          {
-            "source": "**",
-            "destination": "/index.html"
-          }
-        ]
+      {
+        "hosting": {
+          "public": "dist",
+          "ignore": [],
+          "rewrites": [
+            {
+              "source": "**",
+              "destination": "/index.html"
+            }
+          ]
+        }
       }
-    }
     ```
 
     `.firebaserc`:
 
     ```
-    {
-      "projects": {
-        "default": "<YOUR_FIREBASE_ID>"
+      {
+        "projects": {
+          "default": "<YOUR_FIREBASE_ID>"
+        }
       }
-    }
     ```
 
 3. After running `npm run build`, deploy using the command `firebase deploy`.
 
 
-=> live link: https://three-js-moon.web.app/
+=> live link: https://threejs-moon.web.app/
 
 Back to [top](#tableOfContents)
 
