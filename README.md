@@ -24,6 +24,10 @@
 
 Creating an animated 3D galaxy with Three.js
 
+Back to [top](#tableOfContents)
+
+---
+
 ## Run the project locally <a name="#runLocally"></a>
 
 Install [Vite](https://vitejs.dev/), a development server with live reload capability.
@@ -52,26 +56,24 @@ Back to [top](#tableOfContents)
     - Please see `.nvmrc` file at the root of `three-js-moon` repo.
     - Using nvm, a Node Version Manager is recommended as it helps you manage and switch between different Node versions with ease. It provides a command-line interface where you can install different versions with a single command, set a default, switch between them, etc.
 2. In GitHub click on the repository nammed [three-js-moon](https://github.com/sctlcd/three-js-moon)
-3. Along the top bar, find the “clone or download” button.
-4. Here you have the option to clone by HTTPS or SSH.
-5. Once you have chose your desired option, then click the copy icon next to the URL.
-6. In the terminal, ensure you are in the correct directory which you want to copy the code into. If not, change the directory.
-7. Run 
+3. Clone the repository locally. Run
 
     ````
       git clone https://github.com/sctlcd/three-js-moon.git
     ````
 
-8. Press the enter button and your clone will be created.
-9. Install all modules listed as dependencies in package.json
-    
+4. Install all modules listed as dependencies in package.json
+
     ```
+      cd three-js-moon
       npm i 
     ```
 
-    note: in this template [three](https://www.npmjs.com/package/three) - **a JavaScript 3D library**, [vite](https://vitejs.dev/) - **a built in development server**,
+    note: in this app 
+    - [three](https://www.npmjs.com/package/three) - **a JavaScript 3D library**, 
+    - [vite](https://vitejs.dev/) - **a built in development server**,
 
-10. Install Parcel server, a development server with live reload capability.
+5. Install Vite, a development server with live reload capability.
 
   - To install:
     
@@ -100,7 +102,6 @@ Back to [top](#tableOfContents)
     `firebase.json`:
 
     ```
-    json
     {
       "hosting": {
         "public": "dist",
@@ -118,7 +119,6 @@ Back to [top](#tableOfContents)
     `.firebaserc`:
 
     ```
-    js
     {
       "projects": {
         "default": "<YOUR_FIREBASE_ID>"
