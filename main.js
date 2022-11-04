@@ -1,4 +1,4 @@
-import '../style/style.css';
+import './assets/style/style.css';
 import * as THREE from '/node_modules/three/build/three.module.js';
 import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls';
 
@@ -157,9 +157,12 @@ moveCamera();
 
 // make canvas responsive
 window.addEventListener('resize', () => {
-  renderer.setSize(window.innerWidth, window.innerHeight); // update size
   camera.aspect = window.innerWidth / window.innerHeight; // update aspect ratio
   camera.updateProjectionMatrix(); // apply changes
+
+  renderer.setSize(window.innerWidth, window.innerHeight); // update size
+  renderer.setPixelRatio(window.devicePixelRatio); // use to render at the native screen resolution
+  // renderer.render(scene, camera); // Not needed since it is called in rendering()
 });
 
 function addStar() {
